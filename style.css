@@ -63,3 +63,11 @@ body {
   /* offset-x | offset-y | blur-radius | color */
   object-fit: cover;
 }
+
+.card:hover {
+  transform: scale(1.02);
+  /* when hovering the card --> make a shadow on the cards that's why i use filter: drop-shadow */
+  filter: drop-shadow(0 0 10px #333);
+  /* offset-x | offset-y | blur-radius | color */
+  transition: 0.8s ease-in-out;
+}
