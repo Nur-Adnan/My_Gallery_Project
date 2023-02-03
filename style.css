@@ -35,3 +35,31 @@ body {
   margin-bottom: 20px;
   font-size: 3rem;
 }
+
+.gallery {
+  display: flex;
+  /* default main x-axis is horizontal */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  position: relative;
+  /*To make the text overlapping we used position:relative to the parent element & postion absulate to the child element */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* after 32% of the image being added, then nothing will be showed here */
+}
+
+.card img {
+  height: 100%;
+  /* when we set the height 100%, the the image caption will be hidden. */
+  width: 100%;
+  filter: grayscale(100%);
+  /* To set filter in the image */
+  box-shadow: 0 0 20px #333;
+  /* offset-x | offset-y | blur-radius | color */
+  object-fit: cover;
+}
