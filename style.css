@@ -4,15 +4,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* box sizing: border box is used to fixed our container size. Here the content are allowed to small but the container size never be changed */
 }
 
 html,
 body {
   font-family: "Poppins", sans-serif;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  /* right and left side scrolling not allowed --->that's why added overflow-x: hidden */
+  overflow-y: auto;
+  /* allowed to scrollled y direction */
+}
+
+.container {
+  height: 100%;
+  max-width: 1200px;
+  /* The container max width is 1200px, not more than */
+  margin: 0 auto;
+  /* left and right are equal margin ---> So the container set on the middle part */
+  padding: 20px;
+}
+
+.container h1 {
+  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
 }
